@@ -6,7 +6,31 @@
 <body>
   <h1>Welcome to Padel Tool</h1>
  
+  <form action="/" method="POST">
+    <label for="team1_name1"> Team 1 name 1: </label>
+    <input type="text" name="team1_name1" id="team1_name1" required>
+    <label for="team1_name2"> Team 1 name 2: </label>
+    <input type="text" name="team1_name2" id="team1_name2" required>
+
+    <label for="team1_score"> Team 1 score: </label>
+    <input type="text" name="team1_score" id="team1_score" required>
+
+    <label for="team2_name1"> Team 2 name 1: </label>
+    <input type="text" name="team2_name1" id="team2_name1" required>
+    <label for="team2_name2"> Team 2 name 2: </label>
+    <input type="text" name="team2_name2" id="team2_name2" required>
+
+    <label for="team2_score"> Team 2 score: </label>
+    <input type="text" name="team2_score" id="team2_score" required>
+    <br><br>
+    <label for="court">Court name: </label>
+    <input type="text" name="court" id="court" required>
+    <label for="date">Date: </label>
+    <input type="date" name="date" id="date" required>
+    <label for="note">Note: </label>
+    <input type="text" name="note" id="note">
+    <button type="submit">Submit</button>
+  </form>
   <a href="/players">Display the rankings</a>
-  <a href="/matches">Log a match</a>
 </body>
 </html>

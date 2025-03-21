@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const express = require("express");
-const matchesController = require("../controllers/matchesController")
+const playersController = require("../controllers/playersController")
 const app = express();
 
 const playersRouter = Router();

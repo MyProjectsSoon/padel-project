@@ -1,11 +1,12 @@
 const { Router } = require("express");
-const express = require("express");
 const matchesController = require("../controllers/matchesController")
-const app = express();
 
 const matchesRouter = Router();
 
-matchesRouter.get('/', res.render("index", {title: 'Log your matches'}));
+matchesRouter.get("/", (req, res) => {
+  res.render("index", { title: 'log your matches' });
+});
+
 matchesRouter.post('/', matchesController.createMatchPost);
 
-  module.exports = matchesRouter;
+module.exports = matchesRouter;
